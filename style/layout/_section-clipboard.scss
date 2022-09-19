@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: rem(155);
+  padding-bottom: rem(155);
+
+  p{
+    padding-top: rem(36);
+    padding-bottom: rem(50);
+    width: rem(730);
+    text-align: center;
+  }
+}

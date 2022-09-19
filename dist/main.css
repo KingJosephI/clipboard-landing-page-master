@@ -74,6 +74,20 @@ section:not(:nth-child(2)), footer {
   text-align: center;
 }
 
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.6111111111rem;
+  padding-bottom: 8.6111111111rem;
+}
+.clipboard p {
+  padding-top: 2rem;
+  padding-bottom: 2.7777777778rem;
+  width: 40.5555555556rem;
+  text-align: center;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
