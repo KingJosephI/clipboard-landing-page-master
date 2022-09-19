@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p{
+    padding-top: rem(36);
+    padding-bottom: rem(117);
+    width: rem(730);
+    text-align: center;
+  }
+
+}

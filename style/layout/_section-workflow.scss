@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
