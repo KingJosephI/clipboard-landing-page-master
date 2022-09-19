@@ -5,4 +5,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  p{
+    padding-top: rem(36);
+    padding-bottom: rem(50);
+    text-align: center;
+  }
+  .options {
+    display: flex;
+    text-align: center;
+    gap: rem(50);
+    padding-top: rem(83);
+    padding-bottom: rem(83);
+  }
 }

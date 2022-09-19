@@ -25,30 +25,7 @@
     width: rem(730);
   }
 
-  a {
-    font-size: rem(18);
-    color: white;
-    padding: rem(15) rem(30);
-    border-radius: rem(30);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  }
 
-  .btn-ios {
-    background-color: $strong-cyan;
-    margin-right: rem(20);
 
-    &:hover{
-      background-color: rgba(38, 186, 164, 0.8);
-    }
-  
-  }
 
-  .btn-mac {
-    background-color: $light-blue;
-
-    &:hover{
-      background-color: rgb(97, 115, 255, 0.8);
-    }
-  }
 }

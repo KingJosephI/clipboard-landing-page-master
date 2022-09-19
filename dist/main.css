@@ -35,6 +35,33 @@ p {
   line-height: 1.6666666667rem;
 }
 
+section:not(:nth-child(2)), footer {
+  padding-left: 9.1666666667rem;
+  padding-right: 9.1666666667rem;
+}
+
+.btn {
+  font-size: 1rem;
+  color: white;
+  padding: 0.8333333333rem 1.6666666667rem;
+  border-radius: 1.6666666667rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.btn.btn-ios {
+  background-color: rgb(38, 186, 164);
+  margin-right: 1.1111111111rem;
+}
+.btn.btn-ios:hover {
+  background-color: rgba(38, 186, 164, 0.8);
+}
+.btn.btn-mac {
+  background-color: rgb(97, 115, 255);
+}
+.btn.btn-mac:hover {
+  background-color: rgba(97, 115, 255, 0.8);
+}
+
 .access {
   display: flex;
   flex-direction: column;
@@ -69,27 +96,6 @@ p {
   color: rgb(159, 171, 178);
   width: 40.5555555556rem;
 }
-.hero a {
-  font-size: 1rem;
-  color: white;
-  padding: 0.8333333333rem 1.6666666667rem;
-  border-radius: 1.6666666667rem;
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-.hero .btn-ios {
-  background-color: rgb(38, 186, 164);
-  margin-right: 1.1111111111rem;
-}
-.hero .btn-ios:hover {
-  background-color: rgba(38, 186, 164, 0.8);
-}
-.hero .btn-mac {
-  background-color: rgb(97, 115, 255);
-}
-.hero .btn-mac:hover {
-  background-color: rgba(97, 115, 255, 0.8);
-}
 
 .keep-track {
   display: flex;
@@ -117,8 +123,25 @@ p {
   margin-left: -27.7777777778rem;
 }
 
+.partners {
+  display: flex;
+  justify-content: space-between;
+}
+
 .workflow {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.workflow p {
+  padding-top: 2rem;
+  padding-bottom: 2.7777777778rem;
+  text-align: center;
+}
+.workflow .options {
+  display: flex;
+  text-align: center;
+  gap: 2.7777777778rem;
+  padding-top: 4.6111111111rem;
+  padding-bottom: 4.6111111111rem;
 }/*# sourceMappingURL=main.css.map */
