@@ -37,16 +37,19 @@ p{
   color: $grayish-blue;
   line-height: rem(30);
 }
-main{
-  // max-width: rem(1440);
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // margin: 0 auto;
-  // background-color: yellow;
-  // overflow: hidden;
-}
+
 section:not(:nth-child(2)), footer{
   padding-left: rem(165);
   padding-right: rem(165);
+}
+
+@media screen and (max-width: rem(900)) {
+  section:not(:nth-child(2)), footer{
+    padding-left: rem(80);
+    padding-right: rem(80);
+  }
+
+  h2{
+    font-size: rem(28);
+  }
 }

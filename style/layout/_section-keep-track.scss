@@ -15,6 +15,7 @@
   
   > p {
     text-align: center;
+    // max-width: rem(730) !important;
   }
 
   > div {
@@ -31,4 +32,32 @@
   .image-container {
     margin-left: rem(-500);
   }
+}
+
+
+@media screen and (max-width: rem(900)) {
+  .keep-track{
+    > p {
+     max-width: rem(400);
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img{
+      width: rem(312);
+    }
+
+    .image-container {
+      margin-left: rem(0);
+    }
+  }
+
+  .features {
+    text-align: center;
+  }
+
+
 }

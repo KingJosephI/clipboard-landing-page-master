@@ -22,10 +22,14 @@
     padding-top: rem(36);
     padding-bottom: rem(50);
     color: $grayish-blue;
-    width: rem(730);
+    max-width: rem(730);
   }
+}
 
-
-
-
+@media screen and (max-width: rem(900)) {
+  .hero{
+    h1{
+      font-size: rem(32);
+    }
+  }
 }

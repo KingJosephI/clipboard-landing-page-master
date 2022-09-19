@@ -9,8 +9,22 @@
   p{
     padding-top: rem(36);
     padding-bottom: rem(117);
-    width: rem(730);
+    max-width: rem(730);
     text-align: center;
   }
 
 }
+
+@media screen and (max-width: rem(900)) {
+  .access{
+
+    p{
+      padding-bottom: rem(70);
+    }
+    img{
+
+      width: rem(311);
+    }
+  } 
+}
+

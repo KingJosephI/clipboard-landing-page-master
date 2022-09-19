@@ -19,3 +19,18 @@
     padding-bottom: rem(83);
   }
 }
+
+@media screen and (max-width: rem(900)){
+
+  .workflow{
+    p{
+      padding-bottom: rem(0);
+    }
+    
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+ 
+}

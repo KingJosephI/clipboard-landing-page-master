@@ -18,7 +18,7 @@ a {
 }
 
 h1, h2, h3 {
-  color: rgb(76, 84, 93);
+  color: hsl(212deg, 10%, 33%);
 }
 
 h2 {
@@ -40,10 +40,19 @@ section:not(:nth-child(2)), footer {
   padding-right: 9.1666666667rem;
 }
 
+@media screen and (max-width: 50rem) {
+  section:not(:nth-child(2)), footer {
+    padding-left: 4.4444444444rem;
+    padding-right: 4.4444444444rem;
+  }
+  h2 {
+    font-size: 1.5555555556rem;
+  }
+}
 .btn {
   font-size: 1rem;
   color: white;
-  padding: 0.8333333333rem 1.6666666667rem;
+  padding: 1.1111111111rem 4.4444444444rem;
   border-radius: 1.6666666667rem;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -51,6 +60,7 @@ section:not(:nth-child(2)), footer {
 .btn.btn-ios {
   background-color: rgb(38, 186, 164);
   margin-right: 1.1111111111rem;
+  box-shadow: rgba(45, 160, 77, 0.09) 0px 2px 1px, rgba(45, 160, 77, 0.09) 0px 4px 2px, rgba(45, 160, 77, 0.09) 0px 8px 4px, rgba(45, 160, 77, 0.09) 0px 16px 8px, rgba(45, 160, 77, 0.1) 0px 32px 16px;
 }
 .btn.btn-ios:hover {
   background-color: rgba(38, 186, 164, 0.8);
@@ -62,6 +72,15 @@ section:not(:nth-child(2)), footer {
   background-color: rgba(97, 115, 255, 0.8);
 }
 
+@media screen and (max-width: 50rem) {
+  .btn {
+    display: block;
+    width: 100% !important;
+  }
+  .btn-mac {
+    margin-top: 1.1111111111rem;
+  }
+}
 .access {
   display: flex;
   flex-direction: column;
@@ -70,10 +89,18 @@ section:not(:nth-child(2)), footer {
 .access p {
   padding-top: 2rem;
   padding-bottom: 6.5rem;
-  width: 40.5555555556rem;
+  max-width: 40.5555555556rem;
   text-align: center;
 }
 
+@media screen and (max-width: 50rem) {
+  .access p {
+    padding-bottom: 3.8888888889rem;
+  }
+  .access img {
+    width: 17.2777777778rem;
+  }
+}
 .clipboard {
   display: flex;
   flex-direction: column;
@@ -88,6 +115,11 @@ section:not(:nth-child(2)), footer {
   text-align: center;
 }
 
+@media screen and (max-width: 50rem) {
+  .clipboard > p {
+    max-width: 22.2222222222rem;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -100,7 +132,7 @@ section:not(:nth-child(2)), footer {
 .hero h1 {
   font-size: 2.5555555556rem;
   padding-top: 4rem;
-  color: rgb(76, 84, 93);
+  color: hsl(212deg, 10%, 33%);
 }
 .hero p {
   font-size: 1.1111111111rem;
@@ -108,9 +140,14 @@ section:not(:nth-child(2)), footer {
   padding-top: 2rem;
   padding-bottom: 2.7777777778rem;
   color: rgb(159, 171, 178);
-  width: 40.5555555556rem;
+  max-width: 40.5555555556rem;
 }
 
+@media screen and (max-width: 50rem) {
+  .hero h1 {
+    font-size: 1.7777777778rem;
+  }
+}
 .keep-track {
   display: flex;
   flex-direction: column;
@@ -137,11 +174,39 @@ section:not(:nth-child(2)), footer {
   margin-left: -27.7777777778rem;
 }
 
+@media screen and (max-width: 50rem) {
+  .keep-track > p {
+    max-width: 22.2222222222rem;
+  }
+  .keep-track > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .keep-track img {
+    width: 17.3333333333rem;
+  }
+  .keep-track .image-container {
+    margin-left: 0rem;
+  }
+  .features {
+    text-align: center;
+  }
+}
 .partners {
   display: flex;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 50rem) {
+  .partners {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .partners > div {
+    margin-bottom: 2.2222222222rem;
+  }
+}
 .workflow {
   display: flex;
   flex-direction: column;
@@ -158,4 +223,67 @@ section:not(:nth-child(2)), footer {
   gap: 2.7777777778rem;
   padding-top: 4.6111111111rem;
   padding-bottom: 4.6111111111rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .workflow p {
+    padding-bottom: 0rem;
+  }
+  .workflow .options {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer {
+  background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  padding-top: 2.2222222222rem;
+  padding-bottom: 2.2222222222rem;
+  gap: 11.1111111111rem;
+}
+footer a, footer i {
+  color: hsl(212deg, 10%, 33%);
+}
+footer a:hover, footer i:hover {
+  color: rgb(38, 186, 164);
+  cursor: pointer;
+}
+footer i {
+  font-size: 1.3333333333rem;
+  margin-right: 1.1111111111rem;
+}
+footer img {
+  width: 3.0555555556rem;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 1.1111111111rem;
+}
+footer ul li {
+  width: 25%;
+  padding-bottom: 1.1111111111rem;
+}
+footer .social-media {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 50rem) {
+  footer, ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 1.1111111111rem;
+    align-items: center;
+  }
+  footer .social-media {
+    margin-left: 0;
+  }
+  footer li {
+    width: 100% !important;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

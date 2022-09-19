@@ -1,5 +1,20 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
 .partners{
   display: flex;
   justify-content: space-between;
+}
 
+
+@media screen and (max-width: rem(900)) {
+  .partners{
+    display: flex;
+    flex-direction: column !important; 
+    text-align: center;
+
+    > div{
+      margin-bottom: rem(40);
+    }
+  }
 }

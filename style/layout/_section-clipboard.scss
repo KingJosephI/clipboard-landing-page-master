@@ -15,3 +15,11 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: rem(900)) {
+  .clipboard{
+    > p {
+      max-width: rem(400);
+     }
+  }
+}
